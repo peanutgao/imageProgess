@@ -14,6 +14,9 @@
 		7C82A6B81B4FFD63009FAC78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C82A6B61B4FFD63009FAC78 /* LaunchScreen.storyboard */; };
 		7C82A6C31B4FFD63009FAC78 /* _____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82A6C21B4FFD63009FAC78 /* _____Tests.swift */; };
 		7C82A6CE1B4FFD63009FAC78 /* _____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82A6CD1B4FFD63009FAC78 /* _____UITests.swift */; };
+		7C82A6DC1B4FFD98009FAC78 /* 1435559914957299.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C82A6DB1B4FFD98009FAC78 /* 1435559914957299.jpg */; };
+		7C85B85E1B50082A007838F0 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C85B85D1B50082A007838F0 /* UIView+AutoLayout.swift */; };
+		7C85B8601B500A53007838F0 /* YSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C85B85F1B500A53007838F0 /* YSImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		7C82A6C91B4FFD63009FAC78 /* 图片进度条UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "图片进度条UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C82A6CD1B4FFD63009FAC78 /* _____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_____UITests.swift"; sourceTree = "<group>"; };
 		7C82A6CF1B4FFD63009FAC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C82A6DB1B4FFD98009FAC78 /* 1435559914957299.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1435559914957299.jpg; sourceTree = "<group>"; };
+		7C85B85D1B50082A007838F0 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		7C85B85F1B500A53007838F0 /* YSImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,13 @@
 			children = (
 				7C82A6AD1B4FFD63009FAC78 /* AppDelegate.swift */,
 				7C82A6AF1B4FFD63009FAC78 /* ViewController.swift */,
+				7C85B85D1B50082A007838F0 /* UIView+AutoLayout.swift */,
+				7C85B85F1B500A53007838F0 /* YSImageView.swift */,
 				7C82A6B11B4FFD63009FAC78 /* Main.storyboard */,
 				7C82A6B41B4FFD63009FAC78 /* Assets.xcassets */,
 				7C82A6B61B4FFD63009FAC78 /* LaunchScreen.storyboard */,
 				7C82A6B91B4FFD63009FAC78 /* Info.plist */,
+				7C82A6DB1B4FFD98009FAC78 /* 1435559914957299.jpg */,
 			);
 			path = "图片进度条";
 			sourceTree = "<group>";
@@ -230,6 +239,7 @@
 			files = (
 				7C82A6B81B4FFD63009FAC78 /* LaunchScreen.storyboard in Resources */,
 				7C82A6B51B4FFD63009FAC78 /* Assets.xcassets in Resources */,
+				7C82A6DC1B4FFD98009FAC78 /* 1435559914957299.jpg in Resources */,
 				7C82A6B31B4FFD63009FAC78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C82A6B01B4FFD63009FAC78 /* ViewController.swift in Sources */,
+				7C85B85E1B50082A007838F0 /* UIView+AutoLayout.swift in Sources */,
+				7C85B8601B500A53007838F0 /* YSImageView.swift in Sources */,
 				7C82A6AE1B4FFD63009FAC78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +495,7 @@
 				7C82A6D41B4FFD63009FAC78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C82A6D51B4FFD63009FAC78 /* Build configuration list for PBXNativeTarget "图片进度条Tests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +504,7 @@
 				7C82A6D71B4FFD63009FAC78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C82A6D81B4FFD63009FAC78 /* Build configuration list for PBXNativeTarget "图片进度条UITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +513,7 @@
 				7C82A6DA1B4FFD63009FAC78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

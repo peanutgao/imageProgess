@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="图片进度条" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1435559914957299.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="avE-EE-gjK" userLabel="imageView" customClass="YSImageView" customModule="图片进度条" customModuleProvider="target">
+                                <rect key="frame" x="180" y="226" width="240" height="147"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="gWt-qg-PSV"/>
+                                    <constraint firstAttribute="width" constant="240" id="pXM-34-bfu"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6TX-1S-OgJ">
+                                <rect key="frame" x="178" y="417" width="244" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="slide:" destination="BYZ-38-t0r" eventType="valueChanged" id="jgL-Zd-4xN"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="avE-EE-gjK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AFk-dC-cHK"/>
+                            <constraint firstItem="6TX-1S-OgJ" firstAttribute="leading" secondItem="avE-EE-gjK" secondAttribute="leading" id="jkB-Kn-ZHV"/>
+                            <constraint firstItem="avE-EE-gjK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p10-Km-Qa8"/>
+                            <constraint firstItem="6TX-1S-OgJ" firstAttribute="width" secondItem="avE-EE-gjK" secondAttribute="width" id="rE3-m2-AzR"/>
+                            <constraint firstItem="6TX-1S-OgJ" firstAttribute="top" secondItem="avE-EE-gjK" secondAttribute="bottom" constant="44" id="ukH-Y2-OIw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageV" destination="avE-EE-gjK" id="P4a-d7-RvW"/>
+                        <outlet property="prograssSlider" destination="6TX-1S-OgJ" id="H62-X8-EZL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1435559914957299.jpg" width="500" height="313"/>
+    </resources>
 </document>
